@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: local("Inter Regular"),
+      url("./assets/webfonts/Inter-Regular.woff2") format("woff2"),
+      url("./assets/webfonts/Inter-Regular.woff") format("woff");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: local("Inter Semibold"),
+      url("./assets/webfonts/Inter-SemiBold.woff2") format("woff2"),
+      url("./assets/webfonts/Inter-SemiBold.woff") format("woff");
+    font-weight: 500;
+  }
+
+  html {
+    @apply text-[30%] sm:text-[60%] lg:text-[100%];
+  }
+
+  .city.unactive {
+    @apply opacity-0 invisible transition-all delay-0 duration-200;
+  }
+
+  .cities.unactive {
+    @apply w-48;
+  }
+
+  .btn.unactive {
+    @apply rotate-0;
+  }
+}

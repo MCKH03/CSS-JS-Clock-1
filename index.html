@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <script defer type="text/javascript" src="./main.js"></script>
+    <title>Clock 1</title>
+  </head>
+  <body
+    class="h-screen flex items-center justify-center flex-col bg-custom bg-center bg-cover gap-5"
+  >
+    <div
+      class="flex items-center gap-5 font-inter text-white text-2xl bg-black rounded-lg shadow-custom-card p-5 whitespace-nowrap relative cities unactive transition-all duration-500 w-[37rem]"
+    >
+      <div
+        class="w-[1.5rem] h-[1.5rem] absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 hover:cursor-pointer btn unactive rotate-180 transition-all duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          height="100%"
+          fill="#000000"
+          viewBox="0 0 256 256"
+          class="bg-white p-1 rounded-full"
+        >
+          <path
+            d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+          ></path>
+        </svg>
+      </div>
+
+      <span>Choose a city</span>
+      <span
+        class="city unactive transition-all duration-500 delay-300 relative block after:absolute after:-bottom-2 after:rounded-full after:left-0 after:w-0 after:h-1 after:bg-white hover:after:w-full after:transition-all after:duration-500 hover:cursor-pointer"
+        >London</span
+      >
+      <span
+        class="city unactive transition-all duration-500 delay-300 relative block after:absolute after:-bottom-2 after:rounded-full after:left-0 after:w-0 after:h-1 after:bg-white hover:after:w-full after:transition-all after:duration-500 hover:cursor-pointer"
+        >New York</span
+      >
+      <span
+        class="city unactive transition-all duration-500 delay-300 relative block after:absolute after:-bottom-2 after:rounded-full after:left-0 after:w-0 after:h-1 after:bg-white hover:after:w-full after:transition-all after:duration-500 hover:cursor-pointer"
+        >Tokyo</span
+      >
+      <span
+        class="city unactive transition-all duration-500 delay-300 relative block after:absolute after:-bottom-2 after:rounded-full after:left-0 after:w-0 after:h-1 after:bg-white hover:after:w-full after:transition-all after:duration-500 hover:cursor-pointer"
+        >Nairobi</span
+      >
+    </div>
+    <p
+      class="indicator font-inter font-semibold text-white text-3xl w-[53rem] justify-self-start"
+    >
+      Europe - London
+    </p>
+
+    <div
+      class="w-[53rem] h-72 relative overflow-hidden rounded-md shadow-custom-card"
+    >
+      <div
+        class="w-full h-full bg-yellow-20 z-20 backdrop-blur-[120px] relative flex items-center justify-center gap-14"
+      >
+        <div
+          class="w-56 h-56 bg-num rounded-lg flex flex-col gap-4 justify-center items-center shadow-custom-num"
+        >
+          <span class="font-inter font-normal text-8xl text-white hour"
+            >17</span
+          >
+          <span class="text-xl text-white">Hours</span>
+        </div>
+        <div
+          class="w-56 h-56 bg-num rounded-lg flex flex-col gap-4 justify-center items-center shadow-custom-num"
+        >
+          <span class="font-inter font-normal text-8xl text-white minute"
+            >35</span
+          >
+          <span class="text-xl text-white">Minutes</span>
+        </div>
+        <div
+          class="w-56 h-56 bg-num rounded-lg flex flex-col gap-4 justify-center items-center shadow-custom-num"
+        >
+          <span class="font-inter font-normal text-8xl text-white second"
+            >43</span
+          >
+          <span class="text-xl text-white">Seconds</span>
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-yellow-80 z-0"></div>
+      <div
+        class="absolute left-10 top-20 w-72 h-36 rotate-45 rounded-[50%] bg-orange-custom z-10"
+      ></div>
+      <div
+        class="absolute left-96 -translate-x-1/2 top-0 h-72 w-48 bg-pink-custom rounded-[50%] z-10"
+      ></div>
+      <div
+        class="absolute right-14 bottom-0 w-72 h-44 bg-red-custom rounded-[50%] z-10"
+      ></div>
+    </div>
+  </body>
+</html>
