@@ -34,4 +34,8 @@
   .btn.unactive {
     @apply rotate-0;
   }
+
+  .loading.unactive {
+    @apply opacity-0;
+  }
 }

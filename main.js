@@ -8,6 +8,7 @@ const btn = document.querySelector(".btn");
 const indicator = document.querySelector(".indicator");
 const allCities = document.querySelectorAll(".city");
 const citiesContainer = document.querySelector(".cities");
+const loadingText = document.querySelector(".loading");
 
 const startTimer = function (city) {
   const timer = setInterval(() => {
@@ -30,6 +31,7 @@ const startTimer = function (city) {
 let timer = startTimer("Europe/London");
 
 // Event Listeners
+// Opening and closing countries box
 btn.addEventListener("click", function () {
   btn.classList.toggle("unactive");
   citiesContainer.classList.toggle("unactive");
@@ -38,11 +40,20 @@ btn.addEventListener("click", function () {
   });
 });
 
+//  Starting new timer
 citiesContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("city")) {
+    // Clearing previous timer and selecting the new city
     const city = e.target.textContent;
     clearInterval(timer);
 
+    // Showing loading text and clearing it after one second
+    loadingText.classList.remove("unactive");
+    setTimeout(() => {
+      loadingText.classList.add("unactive");
+    }, 1000);
+
+    // Setting new timer
     if (city === "London") {
       timer = startTimer("Europe/London");
       indicator.textContent = `Europe - ${city}`;

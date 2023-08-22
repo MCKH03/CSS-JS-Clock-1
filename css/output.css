@@ -488,6 +488,10 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.loading.unactive {
+  opacity: 0;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -696,8 +700,8 @@ html {
   width: 1.5rem;
 }
 
-.w-\[35\.5rem\] {
-  width: 35.5rem;
+.w-\[37rem\] {
+  width: 37rem;
 }
 
 .w-\[53rem\] {
@@ -706,14 +710,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[36rem\] {
-  width: 36rem;
-}
-
-.w-\[37rem\] {
-  width: 37rem;
 }
 
 .-translate-x-1\/2 {
@@ -763,10 +759,6 @@ html {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.justify-self-start {
-  justify-self: start;
 }
 
 .overflow-hidden {
@@ -884,6 +876,11 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .shadow-custom-card {
   --tw-shadow: -2px 12px 12px rgba(0,0,0,0.25);
   --tw-shadow-colored: -2px 12px 12px var(--tw-shadow-color);
@@ -925,9 +922,9 @@ html {
   position: absolute;
 }
 
-.after\:bottom-0::after {
+.after\:-bottom-2::after {
   content: var(--tw-content);
-  bottom: 0px;
+  bottom: -0.5rem;
 }
 
 .after\:left-0::after {
@@ -935,29 +932,9 @@ html {
   left: 0px;
 }
 
-.after\:-bottom-1::after {
-  content: var(--tw-content);
-  bottom: -0.25rem;
-}
-
-.after\:-bottom-2::after {
-  content: var(--tw-content);
-  bottom: -0.5rem;
-}
-
-.after\:h-4::after {
-  content: var(--tw-content);
-  height: 1rem;
-}
-
 .after\:h-1::after {
   content: var(--tw-content);
   height: 0.25rem;
-}
-
-.after\:w-full::after {
-  content: var(--tw-content);
-  width: 100%;
 }
 
 .after\:w-0::after {
